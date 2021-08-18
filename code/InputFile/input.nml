@@ -1,0 +1,46 @@
+&input
+    dim = 3
+    radius = 1e-08
+    np1 = 2000
+    np2 = 1000
+    lx = 4e-08
+    ly = 4e-08
+    lz = 4e-08
+    loc = '../../data/ext/'
+    dt = 1e-18
+    maxt = 1e-13
+    w0 = 1e-10
+    wpic = 5e-10
+    rcut = 1.5e-09
+    numdump = 100
+    temperature = 0
+    init_dis = 'sphere'
+    init_v = 'gaussian'
+    periodic = .false.
+/
+
+&laser
+    e_ext = .false.
+    freq = 999999999999999.9
+    omega = 6283185307179585.0
+    lambda = 2.9979245800000004e-07
+    waven = 20958450.219516814
+    intensity = 1e+16
+    emax = 2744923854.135489
+    laser_start = 5e-14
+    laser_end = 1e-13
+/
+
+&derived
+    np = 3000
+    nstep = 100000
+    dumpstep = 1000
+    dumptime = 1e-15
+    ncellx = 26
+    ncelly = 26
+    ncellz = 26
+    totcell = 17576
+    clx = 1.5384615384615385e-09
+    cly = 1.5384615384615385e-09
+    clz = 1.5384615384615385e-09
+/
